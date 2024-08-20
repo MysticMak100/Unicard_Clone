@@ -1,0 +1,643 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Navbar {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.Navbar strong {
+  font-size: 40px;
+}
+
+.Paycheck {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #343131;
+  color: white;
+}
+
+.Paycheck:hover {
+  background-color: #797474;
+}
+
+.Wave {
+  padding: 5px;
+  margin: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Unicard {
+  height: 400px;
+  width: 400px;
+}
+
+.Maintext {
+  font-size: 54.4px;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 60px;
+}
+
+.LeftWave {
+  width: 40vw;
+}
+
+.Apply {
+  padding: 4px;
+  margin: 4px;
+  background-color: black;
+  color: white;
+}
+
+.Rev {
+  display: flex;
+  margin: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Rev li {
+  margin-right: 15px;
+}
+.ApplyButton {
+  padding: 4px;
+  margin: 4px;
+  border-radius: 10px;
+  background-color: yellow;
+}
+
+.ApplyButton:hover {
+  background-color: yellowgreen;
+}
+
+.ApplyButton:disabled {
+  background-color: goldenrod;
+}
+.Terms {
+  display: flex;
+  margin-top: 15px;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.Checklabel {
+  font-size: 10px;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.Holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: black;
+  padding: 3px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.Dual {
+  padding: 0px 80px;
+  height: 100vh;
+  background: linear-gradient(45deg, #00aaff, #00ffaa, #00aaff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.Featurecontainer {
+  padding: 0px 80px 80px 80px;
+  margin-top: 80px;
+}
+
+.FeatureText {
+  font-size: 30px;
+  width: 30vw;
+  text-align: left;
+  color: black;
+}
+
+.FeatHighlight {
+  font-size: 30px;
+  width: 30vw;
+  color: gray;
+  text-align: left;
+}
+
+.FeatureSubtext {
+  font-size: 18px;
+  width: 30vw;
+  margin-top: 30px;
+  text-align: left;
+  color: grey;
+}
+
+.Featurecontainer.normal.app {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Featurecontainer.reverse.app {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Featurecontainer.normal.ss {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Featurecontainer.normal.ss img {
+  width: 370.55px;
+  height: 494.06px;
+}
+
+.Featurecontainer.normal.ss h1.MainTitle {
+  font-size: 40px;
+}
+.Featurecontainer.normal.ss h1.Subtitle {
+  font-size: 24px;
+}
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.Card-container {
+  padding-left: 50px;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  width: 33.33%;
+  height: 50vh;
+}
+
+.Logo {
+  height: 111.45px;
+  width: 112px;
+}
+
+.svg-image {
+  width: 84px;
+  height: 33px;
+  margin-top: 24px;
+}
+
+.MainTitle {
+  font-size: 24px;
+  margin-top: 20px;
+  color: white;
+  text-align: left;
+  width: 20vw;
+}
+.Subtitle {
+  font-size: 18px;
+  color: grey;
+  text-align: left;
+  width: 20vw;
+}
+
+.Featurecontainer img {
+  align-self: flex-start;
+  height: 400px;
+  width: 430px;
+}
+
+.Free {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.Emphasize {
+  color: palegreen;
+}
+
+.Screenshot {
+  background-color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.footer.show {
+  opacity: 1;
+}
+
+.footer input {
+  margin-left: 10px;
+}
+
+.Foot {
+  display: flex;
+  background-color: black;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.PartnerParent {
+  background-color: #222627;
+}
+
+.PartnerContainer {
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 200px;
+  padding-top: 100px;
+}
+
+.Partner {
+  display: flex;
+  flex-direction: row;
+  margin-top: 96px;
+  margin-bottom: 100px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.img10 {
+  height: 56.6px;
+  width: 120px;
+}
+
+.img11 {
+  height: 56.6px;
+  width: 176px;
+}
+.Ptext h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.Ptext p {
+  font-size: 24px;
+  margin-top: 24px;
+  color: #bfc9cc;
+}
+
+.DownloadParent {
+  padding: 100px 100px 100px 48px;
+  background-color: #00ffaa;
+}
+
+.DownloadContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Dtext {
+  padding-left: 100px;
+  font-size: 42px;
+  width: 100%;
+  text-align: left;
+}
+.Downloads {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+button.Gp {
+  width: 224px;
+  height: 60px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: black;
+}
+
+button.As {
+  width: 224px;
+  height: 60px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: black;
+}
+
+.Discontinue {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: white;
+  font-size: 24px;
+  flex-direction: column;
+}
+
+.Standard {
+  display: flex;
+  background-color: grey;
+  padding: 20px 50px 70px 50px;
+  justify-content: center;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .Wave {
+    margin: 0px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .LeftWave,
+  .Unicard {
+    max-width: 100%;
+  }
+
+  .LeftWave {
+    margin-top: 10px;
+  }
+
+  .Unicard {
+    margin-top: auto;
+    height: auto;
+    width: auto;
+  }
+
+  .Maintext {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .Rev {
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 10px 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .Rev li {
+    margin-bottom: 10px;
+  }
+
+  .Holder {
+    flex-direction: column;
+
+    justify-content: center;
+
+    max-width: none;
+    width: 100%;
+  }
+
+  .Apply {
+    width: 100%;
+    margin-left: 4px;
+  }
+
+  .Featurecontainer {
+    flex-direction: column-reverse;
+  }
+
+  .Featurecontainer.reverse.app {
+    flex-direction: column-reverse;
+  }
+
+  .FeatHighlight {
+    font-size: 15px;
+  }
+
+  .FeatureText {
+    font-size: 15px;
+  }
+
+  .FeatureSubtext {
+    font-size: 12px;
+  }
+
+  .Featurecontainer img {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .Featurecontainer.normal.ss {
+    padding-bottom: 0px;
+    flex-direction: column-reverse;
+  }
+
+  .Featurecontainer.normal.ss h1.MainTitle {
+    font-size: 15px;
+  }
+
+  .Featurecontainer.normal.ss h1.Subtitle {
+    font-size: 12px;
+  }
+  .Screenshot {
+    background-color: black;
+  }
+
+  .Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: black;
+    padding-bottom: 50px;
+  }
+
+  .Logo {
+    height: 60px;
+    width: 61px;
+  }
+
+  .svg-image {
+    width: 50px;
+    height: 22px;
+  }
+  .Card-container {
+    margin-top: 100px;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .Mobileview {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MainTitle {
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    width: 50vw;
+  }
+
+  .Subtitle {
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+    width: 50vw;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .footer.show {
+    opacity: 1;
+  }
+
+  .footer input {
+    margin-left: 0px;
+  }
+
+  .Foot {
+    display: flex;
+    background-color: black;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .Terms {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    max-width: none;
+    box-sizing: border-box;
+    justify-content: flex-end;
+  }
+
+  .Checklabel {
+    font-size: 10px;
+    margin-left: 4px;
+    text-align: left;
+  }
+
+  .Ptext h1 {
+    font-size: 15px;
+    color: white;
+    width: 200px;
+  }
+
+  .Ptext p {
+    font-size: 12px;
+    margin-top: 24px;
+    color: #bfc9cc;
+  }
+
+  .PartnerContainer {
+    padding-top: 0px;
+  }
+
+  .img10 {
+    height: 26.6px;
+    width: 60px;
+  }
+
+  .img11 {
+    height: 26.6px;
+    width: 80px;
+  }
+
+  .Partner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 150px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+
+  .DownloadContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .DownloadParent {
+    padding: 50px 50px 50px 50px;
+    background-color: #00ffaa;
+  }
+  .Gp {
+    margin-right: 5px;
+  }
+  .Dtext {
+    padding-left: 0px;
+    font-size: 18px;
+  }
+  .Dtext h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Discontinue {
+    padding: 20px;
+    color: white;
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  .Standard {
+    display: flex;
+    background-color: grey;
+    padding: 20px 50px 130px 50px;
+    justify-content: center;
+    font-size: 15px;
+  }
+}
